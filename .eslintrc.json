@@ -1,0 +1,52 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["airbnb", "prettier", "eslint:recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "avoidEscape": true,
+        "comments": true,
+        "printWidth": 120,
+        "tabWidth": 2,
+        "useTabs": false,
+        "singleQuote": true,
+        "arrowParens": "always",
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "quoteProps": "as-needed",
+        "semicolons": true,
+        "proseWrap": "preserve",
+        "htmlWhitespaceSensitivity": "css",
+        "endOfLine": "lf",
+        "embeddedLanguageFormatting": "auto",
+        "requirePragma": false,
+        "overrides": [
+          {
+            "files": "*.md",
+            "options": {
+              "parser": "markdown-eslint-parser"
+            }
+          }
+        ]
+      }
+    ],
+    "no-unused-vars": "off",
+    "no-console": "warn",
+    "func-names": "off",
+    "no-process-exit": "warn",
+    "object-shorthand": "off",
+    "class-methods-use-this": "off",
+    "semi": "error",
+    "comma-dangle": "error",
+    "no-restricted-syntax": "warn",
+    "import/prefer-default-export": "warn"
+  }
+}
